@@ -1,8 +1,9 @@
 const express = require("express")
 var favicon = require('serve-favicon')
 var path = require('path')
+const res = require("express/lib/response")
 
-const POST = process.env.POST || 3000
+const PORT = process.env.PORT || 3000
 
 const app = express ()
 app.use('/healthcheck', require('./routes/healthcheck.routes'));
