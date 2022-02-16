@@ -1,3 +1,13 @@
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    }
+
 #mainHeader {
-align-content: center;
-}
+    align-content: center;
+    }
+
