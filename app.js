@@ -1,4 +1,4 @@
-const express = require("express")
+/*const express = require("express")
 var favicon = require('serve-favicon')
 var path = require('path')
 const res = require("express/lib/response")
@@ -15,4 +15,10 @@ app.get('/', function(req, res) {
 
 app.listen(PORT, function() {
     console.log('Server started on port ${PORT}')
-})
+})*/
+
+const card = document.querySelector(".card__inner");
+
+card.addEventListener("click", function (e) {
+  card.classList.toggle('is-flipped');
+});

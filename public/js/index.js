@@ -1,7 +1,5 @@
-console.log("Initializing game")
-setTimeout(age, 3000)
+const card = document.querySelector(".card__inner");
 
-function age() {
-    console.log("Aging game")
-    setTimeout(age, 3000)
-}
+card.addEventListener("click", function (e) {
+  card.classList.toggle('is-flipped');
+});
