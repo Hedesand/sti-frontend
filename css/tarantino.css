@@ -1,0 +1,219 @@
+body {
+  background-color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+.custom-border {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+}
+.button {
+  position: absolute;
+}
+/* start page styling */
+#custom-header {
+  display: block;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  text-align: center;
+  box-shadow: 0px 5px 0px black;
+}
+#start-button {
+  display: block;
+  width: 50%;
+  height: 25%;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  background-color: rgb(255, 255, 255);
+  /* GOT IDEA FROM STACK OVERFLOW BUTTON ANIMATION */
+  box-shadow: 0px 5px 0px black;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.1s;
+}
+#start-button:hover {
+  cursor: pointer;
+  background-color: dodgerblue;
+  color: rgb(255, 255, 255);
+}
+#start-button:focus {
+  outline: none;
+}
+#start-button:active {
+  box-shadow: 0px 2px 3px black;
+  transform: translateY(3px);
+}
+.instructions {
+  font-size: 16px;
+}
+/* question display stylings */
+#custom-timer {
+  box-shadow: 0px 5px 2px rgb(104, 226, 56);
+}
+#custom-score {
+  box-shadow: 0px 5px 0px black;
+}
+.question-item {
+  width: 70%;
+  height: 40%;
+}
+.answer-item {
+  width: 60%;
+  /* text-overflow: ; */
+  height: 20%;
+  font-size: 16px;
+  box-shadow: 0px 5px 0px black;
+  cursor: pointer;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.1s;
+}
+.answer-item:hover {
+  background-color: dodgerblue;
+  color: rgb(255, 255, 255);
+}
+.answer-item:active {
+  transform: translateY(3px);
+  box-shadow: 0px 2px 3px black;
+}
+/* game over stylings */
+#overlay-background {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.35;
+  z-index: 1;
+}
+#game-over {
+  top: 5%;
+  left: 16.665%;
+  width: 66.66%;
+  height: 90%;
+  display: block;
+  text-align: center;
+  z-index: 2;
+}
+
+/* got this from stack overflow
+  change colors of user // score final display
+https://stackoverflow.com/questions/43371912/how-to-make-an-html-css-js-color-changing-background-like-kahoot-it-has */
+.color-change {
+  animation: 4000ms ease-in-out infinite color-change;
+}
+@keyframes color-change {
+  0% {
+    text-decoration: underline overline goldenrod;
+  }
+  20% {
+    text-decoration: underline overline orangered;
+  }
+  40% {
+    text-decoration: underline overline goldenrod;
+  }
+  60% {
+    text-decoration: underline overline orangered;
+  }
+  80% {
+    text-decoration: underline overline red;
+  }
+  100% {
+    text-decoration: underline overline goldenrod;
+  }
+}
+/* make a scroll bar for extra entries */
+#game-over {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#submit-btn {
+  box-shadow: 0px 5px 0px black;
+  cursor: pointer;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.1s;
+}
+#submit-btn:focus {
+  outline: none;
+}
+#submit-btn:active {
+  top: 3px;
+  box-shadow: 0px 2px 3px black;
+}
+.dashedLine {
+  border: 4px dashed black;
+  border-radius: 3px;
+}
+#clear-scores {
+  box-shadow: 0px 5px 0px red;
+  cursor: pointer;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.1s;
+}
+#clear-scores:hover {
+  background-color: red;
+  color: white;
+}
+#clear-scores:active {
+  top: 3px;
+  box-shadow: 0px 2px 3px red;
+}
+#retake-quiz {
+  box-shadow: 0px 5px 0px rgb(104, 226, 56);
+  cursor: pointer;
+  position: relative;
+  top: 0px;
+  transition: all ease 0.1s;
+}
+#retake-quiz:hover {
+  background-color: rgb(104, 226, 56);
+  color: white;
+}
+#retake-quiz:active {
+  top: 3px;
+  box-shadow: 0px 2px 3px rgb(104, 226, 56);
+}
+/* color changing final score display */
+.color-change-score {
+  animation: 4000ms ease-in-out infinite color-change-score;
+  background-color: black;
+  font-size: 28px;
+  font-weight: 800;
+}
+@keyframes color-change-score {
+  0% {
+    color: white;
+  }
+  20% {
+    color: goldenrod;
+  }
+  40% {
+    color: orangered;
+  }
+  60% {
+    color: goldenrod;
+  }
+  80% {
+    color: orangered;
+  }
+  100% {
+    color: white;
+  }
+}
+#dynamic-list {
+  font-size: 18px;
+}
+
+/* cannot highlight text with this CSS */
+/* from stack overflow: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/harrypotter.css" />
+    <title>!Pop Quiz!</title>
+  </head>
+  <body>
+    <!-- top of page; header -->
+    <header class="container-fluid mb-2 mt-2 p-2">
+      <div class="row mx-auto">
+        <!-- timer section -->
+        <div
+          class="col-auto my-auto mr-auto ml-1 rounded custom-border"
+          id="custom-timer"
+        >
+          Time: 60
+        </div>
+        <!-- main title at start -->
+        <div class="col-sm-8 my-auto mx-auto rounded" id="custom-header">
+          <img src="/image/harrypotter.jpg" alt="harrypotter"
+          style="width: 500px; height: 130px;">
+        </div>
+        <!-- score display section -->
+        <div
+          class="col-auto my-auto mr-1 ml-3 rounded custom-border"
+          id="custom-score"
+        >
+          Score: 000
+        </div>
+      </div>
+    </header>
+
+    <!-- main; holds the start quiz section and Q&A display -->
+    <main>
+      <div class="container-fluid mt-2 px-2 pt-2">
+        <!-- start button row -->
+        <!-- will hide upon starting the quiz -->
+        <div class="row mx-auto rounded">
+          <div class="col my-auto rounded">
+            <button
+              class="rounded mx-auto custom-border button noselect"
+              id="start-button"
+              type="button"
+            >
+              START QUIZ
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question Display -->
+      <div class="container px-2" id="question-display">
+        <div class="row mx-auto rounded mb-3">
+          <div class="col my-auto rounded">
+            <h2
+              class="rounded noselect mx-auto p-2 custom-border"
+              id="quiz-question"
+            ></h2>
+          </div>
+        </div>
+        <!-- 4 rows of answer choices -->
+        <!-- to be populated -->
+        <div class="row">
+          <div class="col-sm my-auto">
+            <p
+              class="answer-item noselect mx-auto p-2 rounded custom-border"
+              id="answer1"
+            ></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm my-auto">
+            <p
+              class="answer-item noselect mx-auto p-2 rounded custom-border"
+              id="answer2"
+            ></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm my-auto">
+            <p
+              class="answer-item noselect mx-auto p-2 rounded custom-border"
+              id="answer3"
+            ></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm my-auto">
+            <p
+              class="answer-item noselect mx-auto p-2 rounded custom-border"
+              id="answer4"
+            ></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- transparent black background -->
+    <div class="position-absolute" id="overlay-background"></div>
+    <!-- game over pop up section of the application -->
+    <section
+      class="container-fluid position-absolute p-2 rounded custom-border"
+      id="game-over"
+    >
+      <!-- game over score row -->
+      <div class="row mb-3" id="game-over-splash">
+        <div class="col">
+          <span
+            id="game-over-score"
+            class="custom-border px-2 color-change-score"
+          ></span>
+        </div>
+      </div>
+
+      <!-- enter name row -->
+      <form id="name-form">
+        <div class="form-group form-row">
+          <span class="custom-border col-sm-3 my-auto rounded"
+            >Enter Name:</span
+          >
+          <div class="col-sm-6">
+            <input
+              type="text"
+              class="form-control form-control-sm mt-2 mb-2"
+              id="userName"
+              placeholder="Your Name"
+            />
+          </div>
+          <button
+            type="button"
+            class="custom-border rounded col-sm-3 p-1"
+            id="submit-btn"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+
+      <!-- scores list! -->
+      <div class="row" id="score-list">
+        <div class="col">
+          <hr class="dashedLine mt-0 rounded" />
+          <span class="mx-auto color-change">user -- // -- score</span>
+          <ul id="dynamic-list" class="mx-auto underOverLine"></ul>
+        </div>
+      </div>
+
+      <!-- row of buttons; clear scores and retake quiz -->
+      <div class="row" id="go-again">
+        <div class="col-sm-6 my-3 px-0">
+          <span
+            class="noselect rounded custom-border py-1 px-4"
+            id="clear-scores"
+          >
+            clear
+          </span>
+        </div>
+        <div class="col-sm-6 my-3 px-0">
+          <span
+            class="noselect rounded custom-border py-1 px-4"
+            id="retake-quiz"
+          >
+            retake
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!--footer holds the instructions; possible score list bypass -->
+    <footer class="container-fluid mt-4" id="footer">
+      <div class="row">
+        <div class="col-sm-12 text-center instructions">
+          Answer as many questions until the timer expires.<br />
+          Each wrong answer will subtract some time!
+        </div>
+      </div>
+    </footer>
+
+    <script src="../javaScript/harrypotter.js"></script>
+  </body>
+</html>
