@@ -28,59 +28,59 @@ var currentTime = 60; //  start with a minute on the clock
 var score = 0; // score start
 var currentQuestion = 0; // keep adding to it to access others in the quiz Index
 var scoreList = []; // empty score list
+
 // question objects
-var tipQ = {
-  question:
-  "In Reservoir Dogs, which man doesn't tip?",
-answers: ["Mr. Orange", "Mr. Blonde", "Mr. Pink", "Mr. White"],
-correctAnswer: "Mr. Pink",
+var headquartersQ = {
+  question: "The Sanctuary, which was the headquarters of the Saviors, was located in what abandoned facility?",
+  answers: ["A Garbage Dump", "A Hospital", "A Prison", "A Factory"],
+  correctAnswer: "A Factory",
 };
-var CheeseQ = {
-  question: "You know what they call a Quarter Pounder with Cheese in Paris?",
-  answers: ["Cheese Burger", "Un quart Cheese", "Royale with Cheese", "Quarter Pounder with Cheese"],
-  correctAnswer: "Royale with Cheese",
+var HilltopQ = {
+  question: "In which state was the Hilltop located?",
+  answers: ["Deleware", "Georgia", "Virginia", "California"],
+  correctAnswer: "Virginia",
 };
-var colourQ = {
-  question: "Which colour is played by tarantino in reservoir dogs?",
-  answers: ["Mr. Pink", "Mr. Brun", "Mr. White", "Mr. Orange"],
-  correctAnswer: "Mr. Brun",
+var flowersQ = {
+  question: "The hand holding her gun trembled while she said, Just look at the flowers.",
+  answers: ["Beth", "Lizzie", "Carol", "Maggie"],
+  correctAnswer: "Carol",
 };
-var truckQ = {
-question: "What is Beatrix Kiddos truck named?",
-answers: ["Pussy Wagon", "Snake Bait", "Cat Stroler", "Fish Wheel"],
-correctAnswer: "Pussy Wagon",
+var democracyQ = {
+  question: "After the fall of the farm, he declared, This is not a democracy anymore.",
+  answers: ["Glenn Rhee", "Daryl Dixon", "Rick Grimes", "Hershel Greene"],
+  correctAnswer: "Rick Grimes",
 };
-var movieQ = {
-  question: "In Inglourious Basterds, one scene takes place during a film screening. What movie are they watching?",
-  answers: ["Solving The Problem", "A Future Of Pride", "Birth Of A Nation", "Nation's Pride"],
-  correctAnswer: "Nation's pride",
+var protectQ = {
+  question: "He felt Rick could not protect Lori and Carl and said, The right choice is the one that keeps us alive.",
+  answers: ["T-Dog", "Daryl Dixon", "Shane Walsh", "Dale Horvath"],
+  correctAnswer: "Shane Walsh",
 };
-var restaurantQ = {
-  question:"This restaurant chain is used in nearly every Tarantino movie.",
-  answers: ["Little Sam's Burger", "Big Kahuna Burger", "The Juicy Burger", "The Greasy Plate"],
-  correctAnswer: "Big Kahuna Burger",
+var OceansideQ = {
+  question: "Which member of Rick's group discovered Oceanside?",
+  answers: ["Carol", "Tara", "Michonne", "Daryl"],
+  correctAnswer: "Tara",
 };
-var killQ = {
-  question: "Which technique does the Bride use to kill Bill in Kill Bill: Vol 2 ?",
-  answers: ["The Viper's Kiss", "The Heron Technique", "Whispering Winds", "Five Point Palm"],
-  correctAnswer: "Five Point Palm",
+var bornQ = {
+  question: "Which of these children was born at the Hilltop?",
+  answers: ["Sophia (Carol's daughter)", "Judith (Lori's daughter)", "Hershel (Maggie's son)", "Gracie (Aaron's daughter)"],
+  correctAnswer: "Hershel (Maggie's son)",
 };
-var LinconQ = {
-  question: "In The Hateful Eight, Marquis Warren has a letter. Who wrote it to him?",
-  answers: ["Ulysses Grant", "Abraham Lincon", "Robert E. Lee", "Stonewall Jackson"],
-  correctAnswer: "Abraham Lincon",
+var ProjectQ = {
+  question: "He claimed, I was part of a ten-person team at the Human Genome Project to weaponize diseases to fight weaponized diseases.",
+  answers: ["Milton", "Abraham", "Eugene", "Dr. Jenner"],
+  correctAnswer: "Eugene",
 };
 
 // array containing the question objects
 var quizQuestionsArray = [
-  tipQ,
-  CheeseQ,
-  colourQ,
-  truckQ,
-  movieQ,
-  restaurantQ,
-  killQ,
-  LinconQ,
+  headquartersQ,
+  HilltopQ,
+  flowersQ,
+  democracyQ,
+  protectQ,
+  OceansideQ,
+  bornQ,
+  ProjectQ,
 ]; // array!!!!
 
 // setting display visibility

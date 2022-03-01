@@ -13,9 +13,9 @@ body {
 #custom-header {
   display: block;
   background-color: rgb(255, 255, 255);
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   text-align: center;
-  box-shadow: 0px 5px 0px black;
+  box-shadow: 0px 5px 0px rgb(255, 255, 255);
 }
 #start-button {
   display: block;
@@ -40,7 +40,7 @@ body {
   outline: none;
 }
 #start-button:active {
-  box-shadow: 0px 2px 3px black;
+  box-shadow: 0px 2px 3px rgb(255, 255, 255);
   transform: translateY(3px);
 }
 .instructions {
@@ -48,7 +48,7 @@ body {
 }
 /* question display stylings */
 #custom-timer {
-  box-shadow: 0px 5px 2px rgb(104, 226, 56);
+  box-shadow: 0px 5px 2px rgb(78, 92, 73);
 }
 #custom-score {
   box-shadow: 0px 5px 0px black;
@@ -69,7 +69,7 @@ body {
   transition: all ease 0.1s;
 }
 .answer-item:hover {
-  background-color: dodgerblue;
+  background-color: rgb(130, 136, 143);
   color: rgb(255, 255, 255);
 }
 .answer-item:active {
@@ -104,22 +104,22 @@ https://stackoverflow.com/questions/43371912/how-to-make-an-html-css-js-color-ch
 }
 @keyframes color-change {
   0% {
-    text-decoration: underline overline goldenrod;
+    text-decoration: underline overline rgb(0, 0, 0);
   }
   20% {
-    text-decoration: underline overline orangered;
+    text-decoration: underline overline rgb(211, 185, 175);
   }
   40% {
-    text-decoration: underline overline goldenrod;
+    text-decoration: underline overline rgb(0, 0, 0);
   }
   60% {
-    text-decoration: underline overline orangered;
+    text-decoration: underline overline rgb(80, 75, 74);
   }
   80% {
-    text-decoration: underline overline red;
+    text-decoration: underline overline rgb(100, 68, 68);
   }
   100% {
-    text-decoration: underline overline goldenrod;
+    text-decoration: underline overline rgb(0, 0, 0);
   }
 }
 /* make a scroll bar for extra entries */
@@ -146,29 +146,29 @@ https://stackoverflow.com/questions/43371912/how-to-make-an-html-css-js-color-ch
   border-radius: 3px;
 }
 #clear-scores {
-  box-shadow: 0px 5px 0px red;
+  box-shadow: 0px 5px 0px rgb(124, 88, 88);
   cursor: pointer;
   position: relative;
   top: 0px;
   transition: all ease 0.1s;
 }
 #clear-scores:hover {
-  background-color: red;
+  background-color: rgb(128, 100, 100);
   color: white;
 }
 #clear-scores:active {
   top: 3px;
-  box-shadow: 0px 2px 3px red;
+  box-shadow: 0px 2px 3px rgb(128, 100, 100);
 }
 #retake-quiz {
-  box-shadow: 0px 5px 0px rgb(104, 226, 56);
+  box-shadow: 0px 5px 0px rgb(86, 97, 82);
   cursor: pointer;
   position: relative;
   top: 0px;
   transition: all ease 0.1s;
 }
 #retake-quiz:hover {
-  background-color: rgb(104, 226, 56);
+  background-color:rgb(125, 170, 132);
   color: white;
 }
 #retake-quiz:active {
@@ -178,28 +178,28 @@ https://stackoverflow.com/questions/43371912/how-to-make-an-html-css-js-color-ch
 /* color changing final score display */
 .color-change-score {
   animation: 4000ms ease-in-out infinite color-change-score;
-  background-color: black;
-  font-size: 28px;
+  background-color: rgb(255, 255, 255);
+  font-size: 25px;
   font-weight: 800;
 }
 @keyframes color-change-score {
   0% {
-    color: white;
+    color: rgb(185, 185, 185);
   }
   20% {
-    color: goldenrod;
+    color: rgb(122, 122, 122);
   }
   40% {
-    color: orangered;
+    color: rgb(179, 168, 165);
   }
   60% {
-    color: goldenrod;
+    color: rgb(0, 0, 0);
   }
   80% {
-    color: orangered;
+    color: rgb(80, 68, 63);
   }
   100% {
-    color: white;
+    color: rgb(100, 75, 75);
   }
 }
 #dynamic-list {

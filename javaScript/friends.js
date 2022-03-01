@@ -29,58 +29,59 @@ var score = 0; // score start
 var currentQuestion = 0; // keep adding to it to access others in the quiz Index
 var scoreList = []; // empty score list
 // question objects
-var tipQ = {
-  question:
-  "In Reservoir Dogs, which man doesn't tip?",
-answers: ["Mr. Orange", "Mr. Blonde", "Mr. Pink", "Mr. White"],
-correctAnswer: "Mr. Pink",
+var divorcedQ = {
+  question: "How many times was Ross legally divorced?",
+  answers: ["Twice", "Three Times", "Five Times", "Six Times"],
+  correctAnswer: "Three Times",
 };
-var CheeseQ = {
-  question: "You know what they call a Quarter Pounder with Cheese in Paris?",
-  answers: ["Cheese Burger", "Un quart Cheese", "Royale with Cheese", "Quarter Pounder with Cheese"],
-  correctAnswer: "Royale with Cheese",
+var BenQ = {
+  question: "How did Susan and Ross come up with Ben’s name?",
+  answers: ["It was the doctor's name", "They both had uncles named Ben", "It's the name of their favorite actor", "It was the janitor's name tag"],
+  correctAnswer: "It was the janitor's name tag",
 };
-var colourQ = {
-  question: "Which colour is played by tarantino in reservoir dogs?",
-  answers: ["Mr. Pink", "Mr. Brun", "Mr. White", "Mr. Orange"],
-  correctAnswer: "Mr. Brun",
+var dateQ = {
+  question: "How long did Ross and Emily date before they got engaged?",
+  answers: ["14 Days", "6 Weeks", "A Year", "3 Months"],
+  correctAnswer: "6 Weeks",
 };
-var truckQ = {
-question: "What is Beatrix Kiddos truck named?",
-answers: ["Pussy Wagon", "Snake Bait", "Cat Stroler", "Fish Wheel"],
-correctAnswer: "Pussy Wagon",
+var interviewQ = {
+  question: "What did Rachel accidentally do to Mr. Zelner during her job interview at Ralph Lauren?",
+  answers: ["Punch him", "Kiss him", "Rip his pants", "Spill coffee on him"],
+  correctAnswer: "Kiss him",
 };
-var movieQ = {
-  question: "In Inglourious Basterds, one scene takes place during a film screening. What movie are they watching?",
-  answers: ["Solving The Problem", "A Future Of Pride", "Birth Of A Nation", "Nation's Pride"],
-  correctAnswer: "Nation's pride",
+var TreegerQ = {
+  question: "How did Monica and Rachel convince Mr. Treeger not to kick them out for illegally subletting their apartment?",
+  answers: ["Rachel goes on a date with him", "Joey does ballroom dancing with him", "Monica cleans his filthy apartment", "Rachel and Monica bribe him with $4,000"],
+  correctAnswer: "Joey does ballroom dancing with him",
 };
-var restaurantQ = {
-  question:"This restaurant chain is used in nearly every Tarantino movie.",
-  answers: ["Little Sam's Burger", "Big Kahuna Burger", "The Juicy Burger", "The Greasy Plate"],
-  correctAnswer: "Big Kahuna Burger",
+
+var PeteQ = {
+  question: "What did Pete Becker do for Monica on their first date?",
+  answers: ["He buys her a restaurant", "He buys her a $20,000 necklace", "He flies them to Rome for Pizza", "He introduces her to Jon Bon Jovi"],
+  correctAnswer: "He flies them to Rome for Pizza",
 };
-var killQ = {
-  question: "Which technique does the Bride use to kill Bill in Kill Bill: Vol 2 ?",
-  answers: ["The Viper's Kiss", "The Heron Technique", "Whispering Winds", "Five Point Palm"],
-  correctAnswer: "Five Point Palm",
+var breakupQ = {
+  question: "How many times did Chandler and Janice break up during the entirety of Friends?",
+  answers: ["Just once", "2 Times", "5 Times", "8 Times"],
+  correctAnswer: "5 Times",
 };
-var LinconQ = {
-  question: "In The Hateful Eight, Marquis Warren has a letter. Who wrote it to him?",
-  answers: ["Ulysses Grant", "Abraham Lincon", "Robert E. Lee", "Stonewall Jackson"],
-  correctAnswer: "Abraham Lincon",
+var roommateQ = {
+  question: "How did Chandler finally get his bad roommate Eddie to move out?",
+  answers: ["He caught Eddie watching him sleep", "He changed the locks and pretended not to know Eddie", "He ate all of Eddie’s dehydrated vegetables", "He released a monkey in Eddie’s room"],
+  correctAnswer: "He changed the locks and pretended not to know Eddie",
 };
 
 // array containing the question objects
 var quizQuestionsArray = [
-  tipQ,
-  CheeseQ,
-  colourQ,
-  truckQ,
-  movieQ,
-  restaurantQ,
-  killQ,
-  LinconQ,
+  divorcedQ,
+  BenQ,
+  dateQ,
+  interviewQ,
+  TreegerQ,
+  PeteQ,
+  breakupQ,
+  roommateQ
+
 ]; // array!!!!
 
 // setting display visibility

@@ -29,58 +29,57 @@ var score = 0; // score start
 var currentQuestion = 0; // keep adding to it to access others in the quiz Index
 var scoreList = []; // empty score list
 // question objects
-var tipQ = {
-  question:
-  "In Reservoir Dogs, which man doesn't tip?",
-answers: ["Mr. Orange", "Mr. Blonde", "Mr. Pink", "Mr. White"],
-correctAnswer: "Mr. Pink",
+var TVshowQ = {
+  question: "Which reality TV show does Rue binge in season 1?",
+  answers: ["The Bachelor", "Big Brother", "Love Island", "Survivor"],
+  correctAnswer: "Love Island",
 };
-var CheeseQ = {
-  question: "You know what they call a Quarter Pounder with Cheese in Paris?",
-  answers: ["Cheese Burger", "Un quart Cheese", "Royale with Cheese", "Quarter Pounder with Cheese"],
-  correctAnswer: "Royale with Cheese",
+var schoolQ = {
+  question: "What is the school in Euphoria called?",
+  answers: ["Beacon Hills High", "East Highland High", "Euphoria High", "Liberty High"],
+  correctAnswer: "East Highland High",
 };
-var colourQ = {
-  question: "Which colour is played by tarantino in reservoir dogs?",
-  answers: ["Mr. Pink", "Mr. Brun", "Mr. White", "Mr. Orange"],
-  correctAnswer: "Mr. Brun",
+var pseudonymQ = {
+  question: "What pseudonym does Nate use when he messages Jules?",
+  answers: ["Alex", "Brad", "Derek", "Tyler"],
+  correctAnswer: "Tyler",
 };
-var truckQ = {
-question: "What is Beatrix Kiddos truck named?",
-answers: ["Pussy Wagon", "Snake Bait", "Cat Stroler", "Fish Wheel"],
-correctAnswer: "Pussy Wagon",
+var OneDirectioQ = {
+  question: "Which members of One Direction did Kat write fanfiction about?",
+  answers: ["Harry Styles & Liam Payne", "Harry Styles & Louis Tomlinson", "Harry Styles & Niall Horan", "Harry Styles & Zayn"],
+  correctAnswer: "Harry Styles & Louis Tomlinson",
 };
-var movieQ = {
-  question: "In Inglourious Basterds, one scene takes place during a film screening. What movie are they watching?",
-  answers: ["Solving The Problem", "A Future Of Pride", "Birth Of A Nation", "Nation's Pride"],
-  correctAnswer: "Nation's pride",
+var pregnantQ = {
+  question: "Who gets pregnant in season 1?",
+  answers: ["Cassie", "Lexi", "Maddy", "Rue"],
+  correctAnswer: "Cassie",
 };
-var restaurantQ = {
-  question:"This restaurant chain is used in nearly every Tarantino movie.",
-  answers: ["Little Sam's Burger", "Big Kahuna Burger", "The Juicy Burger", "The Greasy Plate"],
-  correctAnswer: "Big Kahuna Burger",
+var pornQ = {
+  question: "How old was Nate when he found Cal’s porn collection?",
+  answers: ["10", "11", "12", "13"],
+  correctAnswer: "11",
 };
-var killQ = {
-  question: "Which technique does the Bride use to kill Bill in Kill Bill: Vol 2 ?",
-  answers: ["The Viper's Kiss", "The Heron Technique", "Whispering Winds", "Five Point Palm"],
-  correctAnswer: "Five Point Palm",
+var jukeboxQ = {
+  question: "What song do Cal and Derek play on the jukebox before their first kiss?",
+  answers: ["Bryan Adams - Heaven", "Foreigner - I Want To Know What Love Is", "INXS - Love Will Never Tears Us Apart", "Phil Collins - Something In The Air Tonight"],
+  correctAnswer: "INXS - Love Will Never Tears Us Apart",
 };
-var LinconQ = {
-  question: "In The Hateful Eight, Marquis Warren has a letter. Who wrote it to him?",
-  answers: ["Ulysses Grant", "Abraham Lincon", "Robert E. Lee", "Stonewall Jackson"],
-  correctAnswer: "Abraham Lincon",
+var birthdayQ = {
+  question: "When is Rue's birthday?",
+  answers: ["11 September - 2001", "12 September - 2001", "13 September - 2001", "14 September - 2001"],
+  correctAnswer: "14 September - 2001",
 };
 
 // array containing the question objects
 var quizQuestionsArray = [
-  tipQ,
-  CheeseQ,
-  colourQ,
-  truckQ,
-  movieQ,
-  restaurantQ,
-  killQ,
-  LinconQ,
+  TVshowQ,
+  schoolQ,
+  pseudonymQ,
+  OneDirectioQ,
+  pregnantQ,
+  pornQ,
+  jukeboxQ,
+  birthdayQ,
 ]; // array!!!!
 
 // setting display visibility
