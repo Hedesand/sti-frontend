@@ -2,7 +2,7 @@ const express = require("express")
 var favicon = require('serve-favicon')
 var path = require('path')
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 
 const app = express()
 app.use('/healthcheck', require('./routes/healthcheck.routes'));
