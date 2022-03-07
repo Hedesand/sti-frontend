@@ -1,27 +1,48 @@
-:root {
-  --primary: #460909;
-  --secondary: #af1111;
-  --dark: #000000;
-  --light: #F3F3F3;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    line-height: 1.6em;
-    margin: 0;
-    }    
+@import url('https://fonts.googleapis.com/css2?family=Armata&family=Raleway:wght@300&display=swap');
 
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
     display: flex;
-    justify-content: left;
-    align-content: center;
+    font-family: 'Armata', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
     }
+
+.header{
+    color: #000000;
+    text-align: center;
+    margin-top: 150px;
+    font-family: 'Armata', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    }
+
+.p{
+  color: #000000;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: 'Armata', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+.column{
+  flex: 33.33%;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  padding-left: 140px;
+}
+
+.navbar{
+  padding-right: 30px;
+
+}
+
+.h6{
+  text-align: center;
+  padding-top: 50px;
+}
